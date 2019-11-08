@@ -4,6 +4,8 @@ FROM openjdk:8-jdk-alpine
 # Set Env
 ENV TZ Asia/Shanghai
 
+# Test
+
 # The application's jar file
 ARG JAR_FILE=target/register-0.0.1-SNAPSHOT.jar
 
