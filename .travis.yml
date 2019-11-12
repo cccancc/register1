@@ -20,3 +20,4 @@ after_success:
 notification:
   email: false
   slack: ibm-cio:jFJaiViSqchWmOKeLurBriPN
+  secure: "jFJaiViSqchWmOKeLurBriPN"
