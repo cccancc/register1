@@ -6,6 +6,7 @@ import junit.framework.TestSuite;
 
 public class RegisterServiceApplicationTests extends TestCase {
 
+
 	/**
 	     * Create the test case
 	     *
