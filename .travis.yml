@@ -12,7 +12,7 @@ after_success:
 - echo $DOCKER_USER
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
 - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
-- docker push cccancc/travistest:TAG
+- docker push cccancc/travistest:$TAG
 # - export IMAGE_NAME=cecily/register
 # - docker build -t cecily/register .
 # - docker run -d -p 8100:10001 -d cecily/register
