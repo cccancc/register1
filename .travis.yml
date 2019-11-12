@@ -16,3 +16,7 @@ after_success:
 # - export IMAGE_NAME=cecily/register
 # - docker build -t cecily/register .
 # - docker run -d -p 8100:10001 -d cecily/register
+
+notification:
+  email: false
+  slack: ibm-cio:jFJaiViSqchWmOKeLurBriPN
