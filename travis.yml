@@ -1,0 +1,12 @@
+sudo: required
+language: java
+jdk: openjdk8
+
+services:
+- docker
+before_script: 
+- "ls"
+- echo "modify access"
+script:
+
+- mvn clean package -Dmaven.test.skip=true
