@@ -11,6 +11,7 @@ script:
 after_success:
 - echo $DOCKER_USER
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
+- docker tag a3562aa0b991 cccancc/travistest:8-jdk-alpine 
 - docker push cccancc/travistest:8-jdk-alpine
 #- docker run -p 8200:10001 -d cccancc/travistest:8-jdk-alpine
 # - export IMAGE_NAME=cecily/register
