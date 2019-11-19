@@ -13,8 +13,8 @@ after_success:
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
 - docker build -t cecily/register .
 - docker images
-- docker tag a3562aa0b991 cccancc/travistest:8-jdk-alpine 
-- docker push cccancc/travistest:8-jdk-alpine
+- docker tag cecily/register cccancc/travistest:a
+- docker push cccancc/travistest:a
 #- docker run -p 8200:10001 -d cccancc/travistest:8-jdk-alpine
 # - export IMAGE_NAME=cecily/register
 # - docker build -t cecily/register .
